@@ -1,11 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Webpage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>John Ian Estampa — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <h1>Welcome to My Webpage</h1>
-  <p>This is the initial HTML-only version.</p>
+ 
+  <div class="statusbar">
+    <span id="clock">--:--:--</span>
+    <button id="themeToggle" aria-label="Toggle theme">◐ theme</button>
+  </div>
+ 
+  <header class="hero" id="top">
+    <p class="hero-status">
+      <span class="dot"></span> currently open to opportunities
+    </p>
+    <h1 class="hero-name">John Ian Estampa</h1>
+    <p class="hero-role">Web Developer &amp; IT Student</p>
+    <p class="hero-line">
+      I build small, dependable things for the web — mostly with HTML,
+      CSS and JavaScript, version-controlled the whole way through.
+    </p>
+    <nav class="hero-nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+ 
+  <main>
+ 
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        I'm a Information Technology student learning to ship real, working
+        software instead of just finishing assignments. This site is one
+        of those — built HTML-only first, then layered with CSS and
+        JavaScript on its own branch, the same way I'd want to build
+        anything meant to last.
+      </p>
+      <p>
+        Outside of coursework, I like taking something that already works
+        and rebuilding it slightly better: cleaner markup, faster load,
+        fewer moving parts.
+      </p>
+    </section>
+ 
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+ 
+      <article class="project">
+        <div class="project-head">
+          <h3>Personal Portfolio</h3>
+          <span class="project-year">2026</span>
+        </div>
+        <p>
+          This site. Static HTML/CSS/JS, built and versioned with Git,
+          with a preserved no-style branch showing the unstyled original.
+        </p>
+        <ul class="project-stack">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git</li>
+        </ul>
+        <a class="project-link" href="#" data-placeholder="repo">View repository</a>
+      </article>
+ 
+      <article class="project">
+        <div class="project-head">
+          <h3>Task Tracker</h3>
+          <span class="project-year">2025</span>
+        </div>
+        <p>
+          A lightweight to-do app with local storage persistence,
+          drag-to-reorder tasks, and a keyboard-first input flow.
+        </p>
+        <ul class="project-stack">
+          <li>JavaScript</li><li>CSS Grid</li>
+        </ul>
+        <a class="project-link" href="#" data-placeholder="repo">View repository</a>
+      </article>
+ 
+      <article class="project">
+        <div class="project-head">
+          <h3>Class Scheduler</h3>
+          <span class="project-year">2025</span>
+        </div>
+        <p>
+          A form-driven tool that lays out a weekly class schedule as a
+          grid and flags time conflicts as you type.
+        </p>
+        <ul class="project-stack">
+          <li>HTML</li><li>JavaScript</li>
+        </ul>
+        <a class="project-link" href="#" data-placeholder="repo">View repository</a>
+      </article>
+    </section>
+ 
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <ul class="tags">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>Java</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <ul class="tags">
+          <li>Git</li><li>GitHub</li><li>VS Code</li><li>Figma</li>
+        </ul>
+      </div>
+    </section>
+ 
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>
+        Best way to reach me is email — I check it far more often than
+        anything else.
+      </p>
+      <div class="contact-row">
+        <span id="email">johnian.estampa@cvsu.edu.ph</span>
+        <button id="copyEmail">copy</button>
+      </div>
+      <div class="contact-links">
+        <a href="#" data-placeholder="github">GitHub</a>
+        <a href="#" data-placeholder="linkedin">LinkedIn</a>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <footer class="site-footer">
+    <a href="#top">back to top</a>
+    <span>© <span id="year"></span> John Ian Estampa</span>
+  </footer>
+ 
+  <script src="main.js"></script>
 </body>
 </html>
